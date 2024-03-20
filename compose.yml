@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: postgres_todo_list
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=todo_list
+    ports:
+      - 5432:5432
